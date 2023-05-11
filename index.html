@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casino</title>
+  <title>My Webpage</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <div class="container">
+    <header>
+      <h1>Incremental Game</h1>
+    </header>
+    <p>Click the button to earn coins:</p>
+    <button id="coinButton">Click me!</button>
+    <p class="coin-count">You have <span id="coinCount">0</span> coins.</p>
+    <hr>
+    <h2>Upgrades</h2>
+    <div id="upgrades">
+      <button class="upgrade-btn" data-cost="10" data-increment="1">Upgrade 1 (+1 per click)</button>
+      <button class="upgrade-btn" data-cost="50" data-increment="5">Upgrade 2 (+5 per click)</button>
+      <button class="upgrade-btn" data-cost="100" data-increment="10">Upgrade 3 (+10 per click)</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
